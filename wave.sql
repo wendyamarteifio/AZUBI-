@@ -19,7 +19,7 @@ AND transfers.send_amount_currency='CFA';
 
 
 --Number 4
-
+-- The months are represented as 1-12 (1-January, 5-May, 12- December)
 SELECT COUNT (atx_id) AS agents_transactions,
 extract(month from agent_transactions.when_created) as months
 FROM "WaveM".agent_transactions, "WaveM".agents
